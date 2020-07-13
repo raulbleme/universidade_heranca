@@ -7,9 +7,8 @@ public class Aluno extends Pessoa{
 	//private String email;
 	//private String fone;
 	private String dtMatricula;
-	private Endereco endereco;
 	
-		public Aluno() {
+	public Aluno() {
 			super();
 		
 	}
@@ -18,21 +17,18 @@ public class Aluno extends Pessoa{
 		this.rm = rm;
 		super.setAll(nome, email, fone, endereco);
 		this.dtMatricula = dtMatricula;
-		this.endereco = endereco;
 	}
 	
 	public void setAll(int rm, String nome, String email, String fone, String dtMatricula, Endereco endereco) {
 		this.rm = rm;
 		super.setAll(nome, email, fone, endereco);
 		this.dtMatricula = dtMatricula;
-		this.endereco = endereco;
 	}
 	
 	public String getAll() {
 		return "RM: " + rm + "\n" +
 				super.getAll() + "\n" +
-				"Data de Matrícula: " + dtMatricula + "\n" +
-				"Endereço: " + endereco.getAll();
+				"Data de Matrícula: " + dtMatricula + "\n";
 	}
 	
 	public int getRm() {

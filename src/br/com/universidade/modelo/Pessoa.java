@@ -28,10 +28,16 @@ public class Pessoa {
 	}
 	
 	public String getAll() {
-		return "Nome: " + nome + '\n' +
-				"Nome: " + email + '\n' +
-				"Nome: " + fone + '\n' +
-				"Nome: " + endereco ;
+		return "Nome: " + nome + "\n" +
+				"E-mail: " + email + "\n" +
+				"Telefone: " + fone + "\n" +
+				"Logradouro: " + endereco.getLogradouro() + "\n" +
+				"Bairro: " + endereco.getBairro() + "\n" +
+				"Cidade: " + endereco.getCidade() + "\n" +
+				"CEP: " + endereco.getCep() + "\n" +
+				"Número: " + endereco.getNumero() + "\n" +
+				"UF: " + endereco.getUf() + "\n" +
+				"Complemento: " + endereco.getComplemento();
 	}
 	
 	public void setAll(String nome, String email, String fone, Endereco endereco) {

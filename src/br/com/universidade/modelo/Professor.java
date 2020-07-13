@@ -29,11 +29,12 @@ public class Professor extends Pessoa {
 	public String getAll() {
 		return
 				//super.getAll() + "\n" +
-				getNome() + "\n" +    //métodos getNome() e getEmail() são da classe Pessoa
-				getEmail() + "\n" +   //tomar cuidado para não haver conflito com nome dos métodos em pai e filho.
+				"Nome: " + getNome() + "\n" +    //métodos getNome() e getEmail() são da classe Pessoa
+				"E-mail: " + getEmail() + "\n" +   //tomar cuidado para não haver conflito com nome dos métodos em pai e filho.
 				"CPF: " + cpf + "\n" +
 				"Contratação: " + dtContratacao + "\n" +
-				"CPF: " + cpf + "\n";
+				"CPF: " + cpf + "\n" +
+				"Valor/Hora:" + valorHora;
 	}
 	
 	public String getCpf() {
